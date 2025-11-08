@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.jogador {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f8f8f8;
+    border-radius: 4px;
+}
+
+.posicao {
+    font-weight: bold;
+    color: #2196F3;
+    width: 40px;
+}
+
+.nome {
+    flex-grow: 1;
+}
+
+.pontos {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.primeiro { background: #FFF9C4; }
+.segundo { background: #E3F2FD; }
+.terceiro { background: #F3E5F5; }

@@ -1,0 +1,75 @@
+:root {
+    /* Cores do tema claro (padrão) */
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --container-bg: #fff;
+    --border-color: #ddd;
+    --button-bg: #2196F3;
+    --button-text: #fff;
+    --button-hover: #0b7dda;
+}
+
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--container-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+.content {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+/* Tema escuro */
+body.dark-theme {
+    --bg-color: #1a1a1a;
+    --text-color: #f5f5f5;
+    --container-bg: #2d2d2d;
+    --border-color: #444;
+    --button-bg: #4CAF50;
+    --button-hover: #45a049;
+}
+
+/* Ícone do botão (opcional) */
+#themeToggle::before {
+    content: '🌙';
+    margin-right: 8px;
+}
+
+body.dark-theme #themeToggle::before {
+    content: '☀️';
+}
